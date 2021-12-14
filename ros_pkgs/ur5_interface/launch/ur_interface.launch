@@ -1,0 +1,33 @@
+<launch>
+    <!-- Launch the two nodes responisble for communcation between the robot and the armband -->
+    <node pkg="ur_interface" type="ur_planner.py" name="ur_planning_node" output="screen"/>
+    <!--<node pkg="biox_read" type="data_stream.py" name = "read_node" output="screen"/>-->
+    <!-- Choose simulation or real-life robot -->
+    <arg name="sim" default="false" />
+    <arg name="irl" default="false" />
+    <!-- launch the UR driver to directly connect to the ur_robot -->
+    <group if="$(arg irl)">
+        <include file="$(find ur_robot_driver)/launch/ur5_bringup.launch"/>
+        <include file="$(find ur5_moveit_config)/launch/ur5_moveit_planning_execution.launch">
+                <arg name="sim" value="false" />
+                <arg name="debug" value="false" />
+        </include>
+    </group>
+
+    <include file="$(find ur5_moveit_config)/launch/ur5_moveit_planning_execution.launch">
+            <arg name="sim" value="true" />
+            <arg name="debug" value="false" />
+    </include>
+    <include file="$(find ur_gazebo)/launch/ur5_bringup.launch" />
+
+
+    <!-- launch the gazebo simulation with the same robot as before 
+    <group if="$(arg sim)">
+        <include file="$(find ur5_moveit_config)/launch/ur5_moveit_planning_execution.launch">
+                <arg name="sim" value="true" />
+                <arg name="debug" value="false" />
+        </include>
+        <include file="$(find ur_gazebo)/launch/ur5_bringup.launch" />
+    </group>
+    -->
+</launch>
