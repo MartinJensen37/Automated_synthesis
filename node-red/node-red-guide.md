@@ -1,3 +1,5 @@
+# Node-RED Readme/Information
+
 ## Node-RED UI Flow Structure
 
 This is the structure of the UI with all the subflows split into groups of different color. The main idea of this code is to be able to test various components of the solution individually, such as I/O control, MQTT message etc. 
