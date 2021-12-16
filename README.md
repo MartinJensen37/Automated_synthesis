@@ -3,8 +3,12 @@ This repository is contains code and documentation for operating the automatic s
 
 ![image](https://user-images.githubusercontent.com/11269762/146416383-d93de111-cdac-4694-a24d-26503c61c69f.png)
 
-![image](https://user-images.githubusercontent.com/11269762/146416038-44828104-0290-422c-b48c-804bb8728a21.png)
+
 
 ![image](https://user-images.githubusercontent.com/11269762/146416085-e33f57ec-5cbd-4a2d-b873-cc21748fbfc8.png)
 
 
+![image](https://user-images.githubusercontent.com/11269762/146416910-898239d5-24cd-459c-b911-7d79153b5bc9.png)
+
+
+![image](https://user-images.githubusercontent.com/11269762/146416038-44828104-0290-422c-b48c-804bb8728a21.png)
