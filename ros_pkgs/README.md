@@ -43,3 +43,12 @@ Other features that has yet to be implemented are the following:
 
 ## UR ServiceController
 This package is used for control of high level operations using a UR5 robot and the 
+
+|    Topic    	|                                        Description                                       	| Datatype 	|
+|:-----------:	|:----------------------------------------------------------------------------------------:	|:--------:	|
+| pump/status 	|   Receives a boolean that tells whether the pipette is ready(True/1) or busy(False/0).   	|  Boolean 	|
+| pump/fill   	| Receives a command to fill the pipette with a certain amount of fluid in uL.             	| Integer(formatted as a string)  	|
+| pump/empty  	| Receives a command to empty the pipette of a certain amount of fluid in uL               	| Integer(formatted as a string)  	|
+|     pump    	| Receives string commands such "fill" or "empty" to completely fill or empty the pipette. 	|  String  	|
+|    recipe   	| Receives a recipe number to the python script. The recipe number can be between 1-3.     	| Integer  	|
+|    reset    	| Receives a "reset" string. This topic is used to reset the I/O pins on the robot.        	|  String  	|
