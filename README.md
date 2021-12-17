@@ -13,6 +13,9 @@ This repository is contains code and documentation for operating the automatic s
   - Move to small or large test tube
   - Move large test tube to/from heater
 
+![image](https://user-images.githubusercontent.com/11269762/146534078-1a6d2434-7305-4252-a323-801507d97499.png)
+
+
 ## Communication Structure
 
 The communication between the robot, computer and pipette is mainly done using MQTT and Robot Operating System(ROS). MQTT is a lightweight publish-subscribe network protocol that can transport messeges between devices. MQTT is usually used in IoT and IIoT for communication between a server and set of sensors. Currently, the UR5 robot used in this project is controlled using ROS while the smart pipette is controlled using MQTT. Power for the pipette is provided by the UR5 through the use of a [Kelvin Tool Changer](https://www.toolchanger.eu/). This can also be seen in the Figure below:
