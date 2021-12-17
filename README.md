@@ -21,8 +21,8 @@ This repository is contains code and documentation for operating the automatic s
 The communication between the robot, computer and pipette is mainly done using MQTT and Robot Operating System(ROS). MQTT is a lightweight publish-subscribe network protocol that can transport messeges between devices. MQTT is usually used in IoT and IIoT for communication between a server and set of sensors. Currently, the UR5 robot used in this project is controlled using ROS while the smart pipette is controlled using MQTT. Power for the pipette is provided by the UR5 through the use of a [Kelvin Tool Changer](https://www.toolchanger.eu/). This can also be seen in the Figure below:
 ![image](https://user-images.githubusercontent.com/11269762/146416383-d93de111-cdac-4694-a24d-26503c61c69f.png)
 
+![image](https://user-images.githubusercontent.com/11269762/146535781-8aff26d8-60b2-4458-90d7-c38f14d3208d.png)
 
-![image](https://user-images.githubusercontent.com/11269762/146416085-e33f57ec-5cbd-4a2d-b873-cc21748fbfc8.png)
 
 ## 3D models
 
