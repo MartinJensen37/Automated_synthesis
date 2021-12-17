@@ -1,6 +1,9 @@
 # Automated_synthesis
-This repository is contains code and documentation for operating the automatic synthesis robot cell. This will contain both code for a real-life demonstration as well as a simulated environment in which the robot can operate. 
+This repository is contains code and documentation for operating the automatic synthesis robot cell. This will contain both code for a real-life demonstration as well as a simulated environment in which the robot can operate.
 
+## Communication Structure
+
+The communication between the robot, computer and pipette is mainly done using MQTT and Robot Operating System(ROS). MQTT is a lightweight publish-subscribe network protocol that can transport messeges between devices. MQTT is usually used in IoT and IIoT for communication between a server and set of sensors. 
 ![image](https://user-images.githubusercontent.com/11269762/146416383-d93de111-cdac-4694-a24d-26503c61c69f.png)
 
 
