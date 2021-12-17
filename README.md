@@ -26,6 +26,8 @@ The communication between the robot, computer and pipette is mainly done using M
 
 ## 3D models
 
+These are the 3D models made in this project to create the fingers for the robot gripper and for the smart pipette.
+
 ![image](https://user-images.githubusercontent.com/11269762/146416910-898239d5-24cd-459c-b911-7d79153b5bc9.png)
 
 
